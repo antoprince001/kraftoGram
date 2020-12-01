@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+const {ObjectId} = mongoose.Schema.Types
 const userSchema = new mongoose.Schema({
     name:{
         type: String,
@@ -12,7 +12,29 @@ const userSchema = new mongoose.Schema({
     password :{
         type: String,
         required: true
-    }
+    },
+    resetToken: String,
+    expireToken: Date,
+    about:{
+        type:String
+    },
+    pic:{
+        type:String,
+        default: "https://res.cloudinary.com/chordsnstrings/image/upload/v1606728864/504-5040528_empty-profile-picture-png-transparent-png_q9zh7t.png"
+    },
+    followers:[
+        {
+            type:ObjectId,
+            ref:"User"
+        }
+    ],
+    following:[
+        {
+            type:ObjectId,
+            ref:"User"
+        }
+    ],
+
 })
 
 mongoose.model("User", userSchema);
