@@ -23,7 +23,8 @@ const SignIn = () =>{
             },
             body: JSON.stringify({
                 password,
-                email
+                email,
+                
             })
         }).then(res=>
             res.json())

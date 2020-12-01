@@ -18,7 +18,11 @@ const NavBar = ()=>{
             <li key="2"><Link to="/profile">Profile</Link></li>,
             <li key="3"><Link to="/create">Create Post</Link></li>,
             <li key="4"><Link to="/followersposts"> Explore friends </Link></li>,
-            <li  key="5">
+            <li key="5">  <Link to="/checkcraft"> Check Craft </Link> </li>,
+            <li key="6">  <Link to="/addcraft"> Add Craft </Link> </li>,
+            <li key="7"> <Link to="/shipcraft"> Ship Craft </Link> </li>,
+            <li key="8"> <Link to="/joinchat"> Community </Link> </li>,
+            <li  key="9">
              <button className="btn #c62828 blue darken-1"
             onClick={()=>{
               localStorage.clear()

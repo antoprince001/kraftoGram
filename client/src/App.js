@@ -11,6 +11,11 @@ import UserProfile from './components/screens/UserProfile'
 import ResetPassword from './components/screens/ResetPassword'
 import LatestPassword from './components/screens/LatestPassword'
 import FollowedPosts from './components/screens/FollowedUsers'
+import CheckCraft from './components/screens/CheckCraft'
+import AddCraft from './components/screens/AddCraft'
+import ShipCraft from './components/screens/ShipCraft'
+import Chat from './components/screens/Chat'
+import Join from './components/screens/Join'
 import {reducer, initialState} from './reducers/userReducer'
 
 export const UserContext = createContext()
@@ -45,6 +50,12 @@ const Routing = () =>{
         <Route path="/profile/:userid"><UserProfile/></Route>
         <Route exact path="/resetPassword"> <ResetPassword/> </Route>
         <Route path="/resetPassword/:token"> <LatestPassword/> </Route>
+        <Route path="/checkcraft"><CheckCraft/></Route>
+        <Route path="/addcraft"><AddCraft/></Route>
+        <Route path="/shipcraft"><ShipCraft/></Route>
+        <Route path="/shipcraft"><ShipCraft/></Route>
+        <Route path="/chat"><Chat/></Route>
+        <Route path="/joinchat"><Join/></Route>
     </Switch>
   )
 }

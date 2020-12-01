@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import {Link, useHistory} from 'react-router-dom'
 import M from 'materialize-css'
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 
 const Signup = () =>{
     const history = useHistory()
@@ -9,7 +11,13 @@ const Signup = () =>{
     const [email, setEmail] = useState("")
     const [about, setAbout] = useState("")
     const [image, setImage] = useState("")
+    const [role, setRole] = useState("")
     const [url, setUrl] = useState(undefined)
+
+    const options = [
+        'Consumer', 'Craftsman', 'Trader'
+      ];
+    const defaultOption = options[0];
 
     //mount field
     useEffect(()=>{
@@ -58,7 +66,8 @@ const Signup = () =>{
                 password,
                 email,
                 about,
-                pic:url
+                pic:url,
+                role
             })
         }).then(res=>
             res.json())
@@ -122,6 +131,14 @@ const Signup = () =>{
                     <input className="file-path validate" type="text"/>
                 </div>
             </div>
+            
+                <Dropdown 
+                options={options} 
+                onChange={(e)=> setRole(e.value)}
+                value={defaultOption} 
+                placeholder="Select Role" />
+            <br/>
+
                 <button className="btn waves-effect waves-light #64b5f6 blue darken-1" onClick={()=>PostData()}>
                     Sign Up
                 </button>

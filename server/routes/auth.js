@@ -24,7 +24,7 @@ router.get("/", (req, res) =>{
 
 
 router.post("/signup", (req, res) =>{
-    const {name, email, password, about, pic} = req.body
+    const {name, email, password, about, pic, role} = req.body
     if(!name || !email || !password)
     {
         return res.status(422).json({error: "Please enter all the fields"})
@@ -42,7 +42,8 @@ router.post("/signup", (req, res) =>{
                     password: hashedPassword,
                     name,
                     about,
-                    pic:pic
+                    pic:pic,
+                    role
                 })
     
                 user.save()
@@ -83,8 +84,8 @@ router.post("/signin", (req, res)=>{
             if(doMatch){
                 // res.json({message:"signed in successfull"})
                 const token = jwt.sign({_id: savedUser._id}, JWT_SECRET)
-                const {_id, name, email,followers, following, pic, about} = savedUser
-                res.json({token:token, user:{_id, name, email, followers, following, pic, about}})
+                const {_id, name, email,followers, following, pic, about, role} = savedUser
+                res.json({token:token, user:{_id, name, email, followers, following, pic, about, role}})
             }
             else{
                 res.json({message: "invalid credentials"})

@@ -13,6 +13,9 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    role:{
+        type:String
+    },
     resetToken: String,
     expireToken: Date,
     about:{
