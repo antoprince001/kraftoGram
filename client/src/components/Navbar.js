@@ -14,6 +14,7 @@ const NavBar = ()=>{
      const renderList = ()=>{
        if(state){
            return [
+             <li key="0"><Link to="/tour"><b> Know more</b></Link></li>,
             <li key="1"><i  data-target="modal1" className="large material-icons modal-trigger" style={{color:"black"}}>search</i></li>,
             <li key="2"><Link to="/profile">Profile</Link></li>,
             <li key="3"><Link to="/create">Create Post</Link></li>,
@@ -64,7 +65,7 @@ const NavBar = ()=>{
     return(
         <nav>
         <div className="nav-wrapper #e3f2fd blue lighten-5">
-          <Link to={state?"/":"/signin"} className="brand-logo left"> KraftOnChain </Link>
+          <Link to={state?"/":"/signin"} className="brand-logo left"> Kraftogram </Link>
           <ul id="nav-mobile" className="right">
              {renderList()}
   

@@ -3,8 +3,11 @@ import {Link, useHistory} from 'react-router-dom'
 import M from 'materialize-css'
 import {UserContext} from '../../App'
 import vid from './video/bc.mp4'
+import useSound from 'use-sound';
+import music from './sound/sample_audio.mp3'
 
 const SignIn = () =>{
+    const [play] = useSound(music);
     const {state, dispatch} = useContext(UserContext)
     const history = useHistory()
     const [password, setPassword] = useState("")
@@ -52,7 +55,7 @@ const SignIn = () =>{
             position:"absolute",
             width:"100%",
             left:"50%",
-            height:"1025px",
+            height:"1100px",
             objectFit:"cover",
             transform:"translate(-50%, -50%)",
             zIndex:"-1"
@@ -61,7 +64,7 @@ const SignIn = () =>{
         </video>
         <div className="mycard">
              <div className="card auth-card input-field">
-                <h2> KraftOnChain </h2>
+                <h2> Kraftogram </h2>
                 <input type="text" 
                 placeholder="Email"
                 value={email}
@@ -76,6 +79,8 @@ const SignIn = () =>{
                 onClick={()=> PostData()}>
                     Login
                 </button>
+                
+                {/* <button onClick={play}>Boop!</button>; */}
 
                 <h5>
                     <Link to="/signup"> Don't have an account ? </Link>

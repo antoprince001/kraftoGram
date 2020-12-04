@@ -58,6 +58,13 @@ const CheckCraft = () =>{
                     Check
                 </button>
 
+                    &nbsp;                
+               <Link to="/timeline">
+               <button className="btn waves-effect waves-light #64b5f6 blue darken-1">
+                    Track Product
+                </button>
+                </Link> 
+
                 
             </div>
             <div className="card auth-card input-field  #e8eaf6 indigo lighten-5">

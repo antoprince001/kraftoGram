@@ -11,11 +11,13 @@ import UserProfile from './components/screens/UserProfile'
 import ResetPassword from './components/screens/ResetPassword'
 import LatestPassword from './components/screens/LatestPassword'
 import FollowedPosts from './components/screens/FollowedUsers'
+import Timeline from './components/screens/Timeline'
 import CheckCraft from './components/screens/CheckCraft'
 import AddCraft from './components/screens/AddCraft'
 import ShipCraft from './components/screens/ShipCraft'
 import Chat from './components/screens/Chat'
 import Join from './components/screens/Join'
+import Tour from './components/screens/Tour'
 import {reducer, initialState} from './reducers/userReducer'
 
 export const UserContext = createContext()
@@ -50,6 +52,8 @@ const Routing = () =>{
         <Route path="/profile/:userid"><UserProfile/></Route>
         <Route exact path="/resetPassword"> <ResetPassword/> </Route>
         <Route path="/resetPassword/:token"> <LatestPassword/> </Route>
+        <Route path="/timeline"><Timeline/></Route>
+        <Route path="/tour"><Tour/></Route>
         <Route path="/checkcraft"><CheckCraft/></Route>
         <Route path="/addcraft"><AddCraft/></Route>
         <Route path="/shipcraft"><ShipCraft/></Route>

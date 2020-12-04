@@ -3,6 +3,7 @@ import {Link, useHistory} from 'react-router-dom'
 import M from 'materialize-css'
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
+import vid from './video/bc.mp4'
 
 const Signup = () =>{
     const history = useHistory()
@@ -12,6 +13,7 @@ const Signup = () =>{
     const [about, setAbout] = useState("")
     const [image, setImage] = useState("")
     const [role, setRole] = useState("")
+    const [lang, setLang] = useState("")
     const [url, setUrl] = useState(undefined)
 
     const options = [
@@ -19,6 +21,8 @@ const Signup = () =>{
       ];
     const defaultOption = options[0];
 
+    const choices = ['English','Hindi','Tamil']
+    const defaultChoice = choices[0]
     //mount field
     useEffect(()=>{
         if(url)
@@ -98,9 +102,21 @@ const Signup = () =>{
     }
 
     return(
+       
         <div className="mycard">
+             <video autoPlay loop muted style={{
+            position:"absolute",
+            width:"100%",
+            left:"50%",
+            height:"1370px",
+            objectFit:"cover",
+            transform:"translate(-50%, -50%)",
+            zIndex:"-1"
+        }}>
+            <source src={vid} type="video/mp4"/>
+        </video>
              <div className="card auth-card input-field">
-                <h2> KraftOnChain </h2>
+                <h2> Kraftogram </h2>
                 <input type="text" 
                 placeholder="Name" 
                 value={name} 
@@ -137,6 +153,12 @@ const Signup = () =>{
                 onChange={(e)=> setRole(e.value)}
                 value={defaultOption} 
                 placeholder="Select Role" />
+            <h6> Select Language </h6>
+            <Dropdown 
+                options={choices} 
+                onChange={(e)=> setLang(e.value)}
+                value={defaultChoice} 
+                placeholder="Select Language" />
             <br/>
 
                 <button className="btn waves-effect waves-light #64b5f6 blue darken-1" onClick={()=>PostData()}>
