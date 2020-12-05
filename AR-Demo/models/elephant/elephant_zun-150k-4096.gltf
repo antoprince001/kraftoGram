@@ -1,0 +1,423 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v0.9.36",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                2
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "elephant_zun-36_6_a_b-base-150k-unwrapped",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "elephant_zun-36_6_a_b-lid-150k-unwrapped",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ]
+        },
+        {
+            "children" : [
+                0,
+                1
+            ],
+            "name" : "Ewer",
+            "rotation" : [
+                -0.7071067690849304,
+                0,
+                0,
+                0.7071067690849304
+            ],
+            "translation" : [
+                0,
+                -85,
+                0
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Default OBJ",
+            "normalTexture" : {
+                "index" : 0,
+                "texCoord" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 1,
+                "texCoord" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Default OBJ.001",
+            "normalTexture" : {
+                "index" : 3,
+                "texCoord" : 0
+            },
+            "occlusionTexture" : {
+                "index" : 4,
+                "texCoord" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 5,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "elephant_zun-36_6_a_b-base-150k-unwrapped",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 0
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "elephant_zun-36_6_a_b-lid-150k-unwrapped",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 12,
+                        "NORMAL" : 13,
+                        "TEXCOORD_0" : 14
+                    },
+                    "indices" : 15,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        },
+        {
+            "source" : 1
+        },
+        {
+            "source" : 2
+        },
+        {
+            "source" : 3
+        },
+        {
+            "source" : 4
+        },
+        {
+            "source" : 5
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "elephant_zun-36_6_a_b-base-150k-4096-normals",
+            "uri" : "elephant_zun-36_6_a_b-base-150k-4096-normals.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "elephant_zun-36_6_a_b-base-150k-4096-occlusion",
+            "uri" : "elephant_zun-36_6_a_b-base-150k-4096-occlusion.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "elephant_zun-36_6_a_b-base-150k-4096-diffuse",
+            "uri" : "elephant_zun-36_6_a_b-base-150k-4096-diffuse.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "elephant_zun-36_6_a_b-lid-150k-4096-normals",
+            "uri" : "elephant_zun-36_6_a_b-lid-150k-4096-normals.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "elephant_zun-36_6_a_b-lid-150k-4096-occlusion",
+            "uri" : "elephant_zun-36_6_a_b-lid-150k-4096-occlusion.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "elephant_zun-36_6_a_b-lid-150k-4096-diffuse",
+            "uri" : "elephant_zun-36_6_a_b-lid-150k-4096-diffuse.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 65535,
+            "max" : [
+                43.36079025268555,
+                144.16220092773438,
+                114.76809692382812
+            ],
+            "min" : [
+                -40.56398010253906,
+                -2.909477949142456,
+                -83.06239318847656
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 65535,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 65535,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 349806,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 18260,
+            "max" : [
+                54.322330474853516,
+                165.9324951171875,
+                107.53379821777344
+            ],
+            "min" : [
+                -52.465850830078125,
+                69.37274169921875,
+                -96.64659881591797
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 18260,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 18260,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 94917,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 1903,
+            "max" : [
+                41.23134994506836,
+                144.0740966796875,
+                108.33039855957031
+            ],
+            "min" : [
+                -34.98258972167969,
+                69.18270111083984,
+                -83.9417724609375
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 1903,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 1903,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5123,
+            "count" : 5277,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5126,
+            "count" : 57701,
+            "max" : [
+                22.600229263305664,
+                171.6905059814453,
+                73.62568664550781
+            ],
+            "min" : [
+                -19.554370880126953,
+                118.85209655761719,
+                -7.5518341064453125
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 13,
+            "componentType" : 5126,
+            "count" : 57701,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 14,
+            "componentType" : 5126,
+            "count" : 57701,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 15,
+            "componentType" : 5123,
+            "count" : 318600,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 786420,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 786420,
+            "byteOffset" : 786420
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 524280,
+            "byteOffset" : 1572840
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 699612,
+            "byteOffset" : 2097120
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 219120,
+            "byteOffset" : 2796732
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 219120,
+            "byteOffset" : 3015852
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 146080,
+            "byteOffset" : 3234972
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 189834,
+            "byteOffset" : 3381052
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 22836,
+            "byteOffset" : 3570888
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 22836,
+            "byteOffset" : 3593724
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 15224,
+            "byteOffset" : 3616560
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10554,
+            "byteOffset" : 3631784
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 692412,
+            "byteOffset" : 3642340
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 692412,
+            "byteOffset" : 4334752
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 461608,
+            "byteOffset" : 5027164
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 637200,
+            "byteOffset" : 5488772
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 6125972,
+            "uri" : "elephant_zun-150k-4096.bin"
+        }
+    ]
+}

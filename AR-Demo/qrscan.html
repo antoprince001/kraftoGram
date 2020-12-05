@@ -1,0 +1,152 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+    <body style='margin : 0px; overflow: hidden;'>
+        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
+        <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+
+        <a-assets>
+            <a-asset-item id="animated-asset" src="models/indoor.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="animated-asset2" src="models/vasegltf/f1980_194-150k-4096.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+          <a-asset-item id="animated-asset3" src="models/elephant/elephant_zun-150k-4096.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-assets>
+        <a-asset-item id="animated-asset4" src="models/vasegltf2/baluster_vase-150k-4096.gltf"></a-asset-item>
+       </a-assets>
+
+      <a-assets>
+        <a-asset-item id="animated-asset5" src="models/stool.gltf"></a-asset-item>
+      </a-assets>
+        <a-marker type='barcode' value='4'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+
+        <a-marker id="animated-marker" type='barcode' value='5'>
+            <a-entity
+                animation-mixer
+                gltf-model="#animated-asset"
+                scale="0.5 0.5 0.5"> 
+            </a-entity>
+        </a-marker>
+
+        <a-marker id="animated-marker2" type='barcode' value='6'>
+          <a-entity
+          animation-mixer
+          gltf-model="#animated-asset2"
+          scale="6 6 6"> <!--change-->
+      </a-entity>        </a-marker>
+
+    
+
+        <a-marker id="animated-marker3" type='barcode' value='7'>
+          <a-entity
+              animation-mixer
+              gltf-model="#animated-asset3"
+              scale="0.01 0.01 0.01">
+          </a-entity>
+      </a-marker>
+
+      <a-marker id="animated-marker4" type='barcode' value='8'>
+        <a-entity
+            animation-mixer
+            gltf-model="#animated-asset4"
+            scale="6 6 6">
+        </a-entity>
+    </a-marker>
+
+    <a-marker id="animated-marker5" type='barcode' value='9'>
+      <a-entity
+          animation-mixer
+          gltf-model="#animated-asset5"
+          scale="7 7 7">
+      </a-entity>
+  </a-marker> 
+
+
+        
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html> 
+<!-- 
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support --
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script>
+    window.onload = function () {
+      document
+        .querySelector(".say-hi-button")
+        .addEventListener("click", function () {
+          // here you can change also a-scene or a-entity properties, like
+          // changing your 3D model source, size, position and so on
+          // or you can just open links, trigger actions...
+          alert("Hi there!");
+        });
+    };
+  </script>
+  <style>
+    .buttons {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .say-hi-button {
+      padding: 0.25em;
+      border-radius: 4px;
+      border: none;
+      background: white;
+      color: black;
+      width: 4em;
+      height: 2em;
+    }
+  </style>
+  <body style="margin : 0px; overflow: hidden;">
+    <div class="buttons">
+      <button class="say-hi-button">SAY HI!</button>
+    </div>
+    <a-assets>
+      <a-asset-item id="animated-asset2" src="models/CesiumMan.gltf"></a-asset-item>
+  </a-assets>
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-entity
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          gltf-model="models/CesiumMan.gltf"
+        ></a-entity>
+      </a-marker>
+
+
+      <a-marker id="animated-marker" type='barcode' value='7'>
+        <a-entity
+                animation-mixer
+                gltf-model="#animated-asset2"
+                scale="2 2 2">
+            </a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html> -->
