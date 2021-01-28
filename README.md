@@ -4,6 +4,14 @@ One-stop solution for the artisans to bring handcrafted materials to limelight v
 augmented by a social network of fellow artisans to grow , learn ,and promote their work as a sustainable community 
 using Augmented Reality and Artificial Intelligence. 
 
+AR 360 - https://gracious-borg-2892d6.netlify.app
+
+AR Demo video : https://drive.google.com/file/d/1kPXQWsmidCFAilOtc7drEok3ReE09AvG/view?usp=drivesdk
+
+AI Demo : https://drive.google.com/drive/folders/1kdXZqjTzJitOPfRy1W1qxQi0q01JUXnY
+
+Blockchain : https://kovan.etherscan.io/address/0x51db96d12e18dc9f999d7a386c2a572ebbc71dde
+
 ## Features
 
 * Social media network to post or like art work and follow other community members.
