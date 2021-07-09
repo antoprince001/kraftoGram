@@ -4,7 +4,9 @@ One-stop solution for the artisans to bring handcrafted materials to limelight v
 augmented by a social network of fellow artisans to grow , learn ,and promote their work as a sustainable community 
 using Augmented Reality and Artificial Intelligence. 
 
-AR 360 - https://gracious-borg-2892d6.netlify.app
+AR 360
+      - https://gracious-borg-2892d6.netlify.app
+      - https://gracious-borg-2892d6.netlify.app/rural
 
 AR Demo video : https://drive.google.com/file/d/1kPXQWsmidCFAilOtc7drEok3ReE09AvG/view?usp=drivesdk
 
