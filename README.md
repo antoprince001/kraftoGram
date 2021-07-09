@@ -5,8 +5,10 @@ augmented by a social network of fellow artisans to grow , learn ,and promote th
 using Augmented Reality and Artificial Intelligence. 
 
 AR 360
-      - https://gracious-borg-2892d6.netlify.app
-      - https://gracious-borg-2892d6.netlify.app/rural
+
+ https://gracious-borg-2892d6.netlify.app
+      
+ https://gracious-borg-2892d6.netlify.app/rural
 
 AR Demo video : https://drive.google.com/file/d/1kPXQWsmidCFAilOtc7drEok3ReE09AvG/view?usp=drivesdk
 
